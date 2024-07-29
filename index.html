@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherWise</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+    <div class="weather-app">
+        <div class="header">
+            <input type="text" id="userLocation" placeholder="Enter Location">
+            <select class="deg" id="deg">
+                <option value="C">°C</option>
+                <option value="F">°F</option>
+            </select>
+            <i class="fa fa-search" onclick="findUserLocation()"></i>
+        </div>
+        <div class="weather-content">
+            <div class="current-weather">
+                <div class="weatherIcon"></div>
+                <h2 class="temperature"></h2>
+                <div class="feelsLike"></div>
+                <div class="description"></div>
+                <div class="date"></div>
+                <div class="city"></div>
+            </div>
+            <hr />
+            <div class="highlights">
+                <h2>Today's Highlights</h2>
+                <div class="highlight-cards">
+                    <div class="highlight-card">
+                        <h3>Humidity</h3>
+                        <i class="fa-solid fa-water"></i>
+                        <p id="HValue"></p>
+                    </div>
+                    <div class="highlight-card">
+                        <h3>Wind Speed</h3>
+                        <i class="fa-solid fa-wind"></i>
+                        <p id="WValue"></p>
+                    </div>
+                    <div class="highlight-card">
+                        <h3>Sunrise & Sunset</h3>
+                        <div>
+                            <i class="fa-solid fa-sun"></i>
+                            <p id="SRValue"></p>
+                        </div>
+                        <div>
+                            <i class="fa-regular fa-sun"></i>
+                            <p id="SSValue"></p>
+                        </div>
+                    </div>
+                    <div class="highlight-card">
+                        <h3>Clouds</h3>
+                        <i class="fa-solid fa-cloud"></i>
+                        <p id="CValue"></p>
+                    </div>
+                    <div class="highlight-card">
+                        <h3>Pressure</h3>
+                        <i class="fa-solid fa-tachometer-alt"></i>
+                        <p id="PValue"></p>
+                    </div>
+                    <div class="highlight-card">
+                        <h3>Sea Level</h3>
+                        <i class="fa-solid fa-water"></i>
+                        <p id="SLValue"></p>
+                    </div>
+                    <div class="highlight-card">
+                        <h3>Ground Level</h3>
+                        <i class="fa-solid fa-mountain"></i>
+                        <p id="GLValue"></p>
+                    </div>
+                    <div class="highlight-card">
+                        <h3>Visibility</h3>
+                        <i class="fa-solid fa-eye"></i>
+                        <p id="VValue"></p>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <h2></h2>
+            <div class="forecast"></div>
+        </div>
+    </div>
+</body>
+</html>
