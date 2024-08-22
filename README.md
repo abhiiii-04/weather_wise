@@ -34,7 +34,7 @@
 
 ## Live Demo
 
-You can view the live demo of the WeatherWise app here: [Live Demo](https://<username>.github.io/<repository-name>/)
+You can view the live demo of the WeatherWise app here: [Live Demo](https://abhiiii-04.github.io/weather_wise/)
 
 ## License
 
